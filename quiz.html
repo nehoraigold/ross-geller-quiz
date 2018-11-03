@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<title>How Ross Geller Are You?</title>
+		<link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Gloria+Hallelujah" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+		 crossorigin="anonymous">
+		<link rel='stylesheet' type='text/css' href='./style/quiz.css'>
+	</head>
+
+	<body>
+		<!-- WELCOME SCREEN -->
+		<section id='start'>
+			<div class='title'>
+				<h2 class='left'>HOW</h2>
+				<h1>R<span class='red'>&bull;</span>O<span class='blue'>&bull;</span>S<span class='yellow'>&bull;</span>S&nbsp;&nbsp;G<span class='red'>&bull;</span>E<span class='yellow'>&bull;</span>L<span class='blue'>&bull;</span>L<span class='red'>&bull;</span>E<span class='yellow'>&bull;</span>R</h1>
+				<h2 class='right'>ARE YOU?</h2>
+			</div>
+			<button onclick='startQuiz();'>
+				<span>Start </span>
+			</button>
+		</section>
+
+		<!-- QUIZ -->
+		<section id='quiz-container' class='inactive'>
+
+			<div class='quiz-content'>
+
+				<!-- Question 1 -->
+				<div class='question' id='q1-container'>
+					<div class='question-container'>
+						<h3>1. How do you feel about dinosaurs?</h3>
+					</div>
+					<div class='choices-container'>
+						<div class='slide-container'>
+							<input class='slider' type='range' name='q1' min='0' max='10' />
+						</div>
+						<ul class='slider-labels'>
+							<li>Who cares?</li>
+							<li>Eh. They're okay.</li>
+							<li>Dinosaurs rule!</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Question 2 -->
+				<div class='question inactive' id='q2-container'>
+					<div class='question-container'>
+						<h3>2. Select all sentences that are grammatically correct.</h3>
+					</div>
+					<div class='choices-container'>
+						<ul>
+							<li>
+								<label class='checkbox-container'>
+									<input type='checkbox' value="right" />I'm still carrying a little holiday weight.
+									<span class="checkmark"></span>
+								</label>
+							</li>
+							<li>
+								<label class='checkbox-container'>
+									<input type='checkbox' />Your over me? When were you... under me?
+									<span class="checkmark"></span>
+								</label>
+							</li>
+							<li>
+								<label class='checkbox-container'>
+									<input type='checkbox' value="right" />The only thing weird would be if someone didn't like Mexican food
+									because I'm making fajitas!
+									<span class="checkmark"></span>
+								</label>
+							</li>
+							<li>
+								<label class='checkbox-container'>
+									<input type='checkbox' />You could not be more wrong: You could try, but you would not be successful.
+									<span class="checkmark"></span>
+								</label>
+							</li>
+							<li>
+								<label class='checkbox-container'>
+									<input type='checkbox' value="right" />Someone ate the only good thing going on in my life.
+									<span class="checkmark"></span>
+								</label>
+							</li>
+							<li>
+								<label class='checkbox-container'>
+									<input type='checkbox' />We we're on a break.
+									<span class="checkmark"></span>
+								</label>
+							</li>
+							<li>
+								<label class='checkbox-container'>
+									<input type='checkbox' />I grew up with Monica, if you didn't eat fast you didn't eat!
+									<span class="checkmark"></span>
+								</label>
+							</li>
+							<li>
+								<label class='checkbox-container'>
+									<input type='checkbox' value="right" />You can see the moonlight bouncing off her head.
+									<span class="checkmark"></span>
+								</label>
+							</li>
+							<li>
+								<label class='checkbox-container'>
+									<input type='checkbox' value="right" />The lotion and the powder have made a paste!
+									<span class="checkmark"></span>
+								</label>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Question 3 -->
+				<div class='question inactive' id='q3-container'>
+					<div class='question-container'>
+						<h3>3. Do you say, 'Mississippi' in between each number when counting seconds?</h3>
+						<p id='q3-error' class='error'>Please select a valid option.</p>
+					</div>
+					<div class='choices-container'>
+						<select class='select-options'>
+							<option value='0'>Select an option:</option>
+							<option value='0'>What? Why would anyone do that?</option>
+							<option value='3'>No, but I know what you're talking about.</option>
+							<option value='7'>Sure, if the situation calls for it.</option>
+							<option value='10'>Absolutely! Why bother counting otherwise?</option>
+						</select>
+					</div>
+				</div>
+
+				<!-- Question 4 -->
+				<div class='question inactive' id='q4-container'>
+					<div class='question-container'>
+						<h3>4. Choose your preferred pet.</h3>
+						<p id='q4-error' class='error'>Please select a valid option.</p>
+					</div>
+					<div class='choices-container'>
+						<ul class='flex-container'>
+							<li>
+								<label>
+									<input type='radio' value='3' name='radio' />
+									<img src='./images/duck.jpg' />
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type='radio' value='8' name='radio' />
+									<img src='./images/dog.jpg' />
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type='radio' value='0' name='radio' />
+									<img src='./images/sphynxcat.jpg' />
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type='radio' value='10' name='radio' />
+									<img src='./images/monkey.jpg' />
+								</label>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Question 5 -->
+				<div class='question inactive' id='q5-container'>
+					<div class='question-container'>
+						<h3>5. How many times have you been married?</h3>
+					</div>
+					<div class='choices-container'>
+						<input type='number' id='marriages' min='0' max='5' value='0' />
+					</div>
+				</div>
+				<div class='align-right'>
+					<button id='submit-button' onclick='continueQuiz();'>Next</button>
+				</div>
+			</div>
+		</section>
+
+		<!-- RESULTS -->
+		<section id='results' class='inactive'>
+				<h1>R<span class='red'>&bull;</span>E<span class='blue'>&bull;</span>S<span class='yellow'>&bull;</span>U<span class='red'>&bull;</span>L<span class='yellow'>&bull;</span>T<span class='blue'>&bull;</span>S</h1>
+			<h3>Score: <span id='score'></span></h3>
+			<div id='outcome-image'><img id='result-img-size' src=''></div>
+			<p id='outcome'></p>
+			<button id='play-again' onclick='playAgain()'><span>Play Again </span></button>
+		</section>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		 crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+		 crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+		 crossorigin="anonymous"></script>
+		<script src='quiz.js'></script>
+	</body>
+
+</html>
