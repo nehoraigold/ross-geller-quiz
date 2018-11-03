@@ -20,14 +20,14 @@ h1 {
     color:white;
     font-family:'Gloria Hallelujah', cursive;
     font-style:italic;
-    font-size:62px;
+    font-size:70px;
     margin-bottom:10px;
 }
 
 h2 {
     color:white;
     font-family:'Gloria Hallelujah', cursive;
-    font-size:48px;
+    font-size:62px;
 }
 
 button {
@@ -46,6 +46,7 @@ button:focus {
 
 .title {
     margin-bottom:100px;
+    transform:rotate(-7deg);
 }
 
 .red {
@@ -280,6 +281,7 @@ input[type='checkbox'], input[type='radio'] {
 
 #results h1 {
     margin-bottom:30px;
+    transform:rotate(2deg);
 }
 
 #results #outcome {

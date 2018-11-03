@@ -103,17 +103,14 @@ function displayOutcome(score, maxScore) {
         sizeDiv.src = lowResult;
         outcome.textContent = "You aren't Ross at all! We bet you've never even once married a lesbian or owned a monkey. Pshhhh.";
     } else if (score < maxScore / 2) {
-        // outcomeImage.src = medlowResult;
         outcomeImage.style.backgroundImage = "url(" + medlowResult + ")";
         sizeDiv.src = medlowResult;
         outcome.textContent = "Huh. You're a little Rossy. You're fine, but you may have to PIVOT a bit before you're truly a Ross doppelganger.";
     } else if (score < maxScore / (1.25)) {
-        // outcomeImage.src = medhighResult;
         outcomeImage.style.backgroundImage = "url(" + medhighResult + ")";
         sizeDiv.src = medhighResult;
         outcome.textContent = "Yeah, you're pretty Rossy. You're Rossy enough to own hair gel and leather pants, but hopefully not Rossy enough to say the wrong name at your own wedding. Yikes.";
     } else {
-        // outcomeImage.src = highResult;
         outcomeImage.style.backgroundImage = "url(" + highResult + ")";
         sizeDiv.src = highResult;
         outcome.textContent = "Holy crap. You are the Rossatron. You love museums and divorces almost as much as you love your friends. Just stop correcting their grammar already!";
